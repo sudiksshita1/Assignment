@@ -1,18 +1,34 @@
+This project contains automation tests for SauceDemo (Used this site for automation demo) using Python, Selenium, and pytest. It includes setup instructions, usage guidelines, and how to run the tests with parallel execution and Allure reporting.
 
-This project includes test automation scripts for evaluating the quality and stability of user journey flows in the SauceDemo web shop. The automation framework is built using Python, Selenium, pytest, and integrates Allure for reporting. It supports parallel execution of tests and can be easily integrated into a CI/CD pipeline.
+## Project Structure
 
-## Project Setup
+- `config/`
+  - `config.py`: Configuration settings for the test automation.
+- `drivers/`
+  - `chromedriver`: Chrome WebDriver binary.
+  - `geckodriver`: Gecko WebDriver binary for Firefox.
+- `tests/`
+  - `test_login.py`: Test cases for the login functionality.
+  - `test_checkout.py`: Test cases for the checkout functionality.
+  - `test_confest.py`: Test cases for various user flows.
+- `reports/`
+  - `allure_reports/`: Directory where Allure reports will be generated.
+- `requirements.txt`: List of required Python packages.
+- `pytest.ini`: Pytest configuration file.
+- `Dockerfile`: Docker configuration for running the tests in a container.
+- `README.md`: This file.
 
-### Prerequisites
+## Prerequisites
 
-- **Python** (version 3.8 or higher)
-- **pip** (Python package installer)
+- Python 3.8 or higher
+- pip
+- WebDriver binaries (chromedriver and geckodriver)
 
-### Installation
+## Setup Instructions
 
 1. **Clone the Repository**
 
-   Clone the repository to your local machine:
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/your-repository-url.git
+   cd your-repository-name
+
