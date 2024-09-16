@@ -1,0 +1,16 @@
+[pytest]
+# Directory to store the Allure report files
+addopts = --alluredir=./reports/allure_reports --maxfail=5 --disable-warnings -q
+
+# Configure pytest to use Allure for reporting
+markers =
+    smoke: Tests that are critical for basic functionality.
+    regression: Tests that cover existing functionality to check for regressions.
+    integration: Tests that cover the integration between different components.
+
+# Define test paths
+testpaths =
+    tests
+
+# Configure pytest-xdist for parallel execution
+xdist_strict = false

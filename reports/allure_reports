@@ -1,0 +1,2 @@
+pytest --alluredir=./reports/allure_reports
+allure serve ./reports/allure_reports
