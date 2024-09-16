@@ -15,7 +15,6 @@ This project contains automation tests for SauceDemo (Used this site for automat
   - `allure_reports/`: Directory where Allure reports will be generated.
 - `requirements.txt`: List of required Python packages.
 - `pytest.ini`: Pytest configuration file.
-- `Dockerfile`: Docker configuration for running the tests in a container.
 - `README.md`: This file.
 
 ## Prerequisites
